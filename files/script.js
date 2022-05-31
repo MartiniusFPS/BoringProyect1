@@ -10,6 +10,7 @@ function nextPage(){
         ifr.remove();
         elm.src = dir;
         elm.id ="txt";
+        elm.style.border= 'none';
         par.appendChild(elm);
         botP.disabled=false;
     }
@@ -25,6 +26,7 @@ function prevPage(){
         ifr.remove();
         elm.src = dir;
         elm.id ="txt";
+        elm.style.border= 'none';
         par.appendChild(elm);
     }
     if (page==1) {
@@ -33,6 +35,7 @@ function prevPage(){
 }
 function start(){
     var dir = "files/NameWIP.pdf#view=fit&navpanes=0&toolbar=0&scrollbar=0&page="+page;
+    document.getElementById('txt').style.border= 'none';
     document.getElementById('txt').src= dir;
     prevPage();
 }
